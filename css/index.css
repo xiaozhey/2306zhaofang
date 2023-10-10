@@ -74,6 +74,7 @@
   display: flex;
   flex-direction: column;
   background-color: #fff;
+  border-bottom: 0.1rem solid #E5E5E5;
 }
 .hotInfo li {
   width: 100%;
@@ -89,8 +90,11 @@
   height: 8rem;
   margin-right: 1.8rem;
 }
+.hotInfo li div {
+  flex: 1;
+}
 .hotInfo li div h3 {
-  width: 23.5rem;
+  width: 22rem;
   font-size: 2.1rem;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -123,6 +127,7 @@
 }
 /* 热门关注 */
 .focus {
+  border-top: 0.1rem solid #E5E5E5;
   margin-top: 0.5rem;
   width: 100%;
   background-color: #fff;
@@ -171,6 +176,7 @@
   bottom: 0;
   background-color: rgba(0, 0, 0, 0.3);
   color: #FFFFFF;
+  z-index: 10;
 }
 .ad span {
   width: 2rem;
