@@ -1,0 +1,320 @@
+/* 轮播图 */
+.swiper {
+  width: 100%;
+  height: 21.6rem;
+}
+.swiper-slide {
+  overflow: hidden;
+}
+.swiper-slide > img {
+  width: 100%;
+  height: 100%;
+  float: left;
+}
+.swiper-pagination {
+  width: 4rem;
+  background-color: rgba(0, 0, 0, 0.3);
+  color: white;
+  border-radius: 4rem;
+  transform: translateX(31rem);
+}
+/* 房源信息 */
+.houseInfo {
+  background-color: #FFFFFF;
+  padding: 2.5rem 2rem;
+  box-sizing: border-box;
+  border-bottom: 0.1rem solid #E5E5E5;
+}
+.houseInfo h3 {
+  width: 28.5rem;
+  font-size: 1.9rem;
+}
+.houseInfo p {
+  font-size: 1.2rem;
+  display: flex;
+  justify-content: space-between;
+  margin: 1rem 0;
+}
+.houseInfo p img {
+  width: 1.5rem;
+}
+.houseInfo div {
+  font-size: 1.2rem;
+  display: flex;
+  justify-content: space-between;
+  color: gray;
+  margin-bottom: 1.2rem;
+}
+.houseInfo .hotCol {
+  display: inline-block;
+  padding: 0.2rem 0.3rem;
+  box-sizing: border-box;
+  background-color: #DEE9F0;
+  color: #8399AE;
+  margin-right: 0.3rem;
+}
+/* 房屋详情 */
+.houseDeta {
+  background-color: #FFFFFF;
+  padding: 0 2rem;
+  box-sizing: border-box;
+  margin: 1.2rem 0rem;
+  border-bottom: 0.1rem solid #E5E5E5;
+  border-top: 0.1rem solid #E5E5E5;
+}
+.houseDeta li {
+  height: 5rem;
+  border-bottom: 0.1rem solid #E5E5E5;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.houseDeta li:last-child {
+  justify-content: center;
+  border: none;
+}
+.houseDeta li:last-child a {
+  color: gray;
+}
+.houseDeta li span {
+  flex: 1;
+}
+/* 房源特色 */
+.houseFeature {
+  background-color: #FFFFFF;
+  padding: 0 2rem;
+  box-sizing: border-box;
+  margin: 1.2rem 0rem;
+  border-bottom: 0.1rem solid #E5E5E5;
+  border-top: 0.1rem solid #E5E5E5;
+}
+.houseFeature li {
+  padding: 1.7rem 0;
+  border-bottom: 0.1rem solid #E5E5E5;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  line-height: 2rem;
+}
+.houseFeature li h3 {
+  font-size: 1.6rem;
+  color: #FF8100;
+}
+.houseFeature li:last-child {
+  justify-content: center;
+  border: none;
+}
+.houseFeature li:last-child a {
+  color: gray;
+}
+/* 户型分间 */
+.houseType {
+  width: 100%;
+  padding: 0rem 1.8rem;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  border-bottom: 0.1rem solid #E5E5E5;
+  border-top: 0.1rem solid #E5E5E5;
+}
+.houseType li {
+  width: 100%;
+  padding: 1.5rem 0rem;
+  display: flex;
+  align-items: center;
+  border-bottom: 0.1rem solid #FF8100;
+}
+.houseType li h3 {
+  font-size: 1.8rem;
+  color: #FF8100;
+}
+.houseType li:first-child {
+  border-bottom: 0.1rem solid #E5E5E5;
+}
+.houseType li:last-child {
+  border: none;
+}
+.houseType li img {
+  height: 8rem;
+  margin-right: 1.8rem;
+}
+.houseType li div h4 {
+  width: 23.5rem;
+  font-size: 1.4rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.houseType li div p {
+  font-size: 1.2rem;
+  display: flex;
+  justify-content: space-between;
+  margin: 1.2rem 0;
+}
+.houseType li div p > span:last-child {
+  font-weight: 700;
+  color: #FF8100;
+}
+.houseType li div div {
+  font-size: 1.2rem;
+  display: flex;
+  justify-content: space-between;
+  color: gray;
+  margin-bottom: 1.2rem;
+}
+.houseType li div .hotCol {
+  display: inline-block;
+  padding: 0.2rem 0.3rem;
+  box-sizing: border-box;
+  background-color: #F4F7F9;
+  color: #8399AE;
+  margin-right: 0.3rem;
+}
+/* 对口学校 */
+.school {
+  background-color: #FFFFFF;
+  padding: 0 2rem;
+  box-sizing: border-box;
+  margin: 1.2rem 0rem;
+  border-bottom: 0.1rem solid #E5E5E5;
+  border-top: 0.1rem solid #E5E5E5;
+}
+.school li {
+  height: 5rem;
+  border-bottom: 0.1rem solid #E5E5E5;
+  display: flex;
+  align-items: center;
+}
+.school li h3 {
+  font-size: 1.8rem;
+}
+.school li span {
+  color: gray;
+}
+.school li:last-child {
+  justify-content: center;
+  border: none;
+}
+.school li:last-child a {
+  color: gray;
+}
+/* 位置及周边 */
+.map {
+  width: 100%;
+  padding: 0rem 1.8rem;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  border-bottom: 0.1rem solid #E5E5E5;
+  border-top: 0.1rem solid #E5E5E5;
+}
+.map li {
+  padding: 1.5rem 0rem;
+  border-bottom: 0.1rem solid #E5E5E5;
+  display: flex;
+  align-items: center;
+}
+.map li h3 {
+  font-size: 1.8rem;
+}
+.map li img {
+  width: 100%;
+}
+.map li:last-child {
+  border: none;
+}
+/* 热门房源 */
+.recommend {
+  width: 100%;
+  padding: 0rem 1.8rem;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  border-bottom: 0.1rem solid #E5E5E5;
+  border-top: 0.1rem solid #E5E5E5;
+  margin-top: 1.2rem;
+}
+.recommend li {
+  padding: 1.5rem 0rem;
+  border-bottom: 0.1rem solid #E5E5E5;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.recommend li:last-child {
+  justify-content: center;
+  align-items: center;
+  border: none;
+}
+.recommend li:last-child a {
+  color: gray;
+}
+.recommend li .recBox {
+  display: flex;
+  align-items: center;
+}
+.recommend li .recBox img {
+  height: 8rem;
+  margin-right: 1.8rem;
+}
+.recommend li .recBox div {
+  flex: 1;
+}
+.recommend li .recBox div h3 {
+  width: 19rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.recommend li .recBox div p {
+  font-size: 1.2rem;
+  display: flex;
+  justify-content: space-between;
+  margin: 1.2rem 0;
+}
+.recommend li .recBox div p > span:last-child {
+  font-weight: 700;
+  color: #FF8100;
+}
+.recommend li .recBox div div {
+  font-size: 1.2rem;
+  display: flex;
+  justify-content: space-between;
+  color: gray;
+  margin-bottom: 1.2rem;
+}
+.recommend li .recBox div .hotCol {
+  display: inline-block;
+  padding: 0.2rem 0.3rem;
+  box-sizing: border-box;
+  background-color: #F4F7F9;
+  color: #8399AE;
+  margin-right: 0.3rem;
+}
+.recommend li:last-child {
+  border: none;
+}
+.recommend li h3 {
+  font-size: 1.8rem;
+}
+.recommend li .reason {
+  padding: 1.2rem 0.7rem;
+  background-color: #F2F2F2;
+  position: relative;
+}
+.recommend li .reason::after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 0;
+  border-left: 1rem solid #fff;
+  border-right: 1rem solid #fff;
+  border-bottom: 1rem solid transparent;
+  background-color: #F2F2F2;
+  position: absolute;
+  top: -1rem;
+  left: 1rem;
+}
