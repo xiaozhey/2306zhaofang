@@ -1,0 +1,83 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+html,
+body {
+  min-width: 37.5rem;
+  background-color: #F5F5F5;
+}
+a {
+  text-decoration: none;
+  color: #333232;
+}
+ul {
+  list-style: none;
+}
+/* 头部 */
+header {
+  width: 100%;
+  background-color: #ff8a00;
+  height: 5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0rem 3rem;
+  box-sizing: border-box;
+}
+header .log {
+  display: flex;
+}
+header .log img {
+  width: 11.5rem;
+}
+header .function {
+  display: flex;
+  align-items: center;
+}
+header .function a:last-child {
+  margin-left: 2rem;
+}
+header .function a img {
+  width: 2.4rem;
+}
+/* 底部 */
+footer {
+  width: 100%;
+  background-color: #2f3130;
+  height: 15rem;
+  padding: 0rem 1.8rem;
+  color: #A19C97;
+  box-sizing: border-box;
+  position: sticky;
+  bottom: 0;
+}
+footer .foNav {
+  width: 100%;
+  height: 4rem;
+  line-height: 4rem;
+  border-bottom: 0.1rem solid #575756;
+}
+footer .foNav a {
+  color: #A19C97;
+}
+footer .foPhonE {
+  width: 95%;
+  margin: auto;
+  display: flex;
+  justify-content: space-around;
+}
+footer .foPhonE li {
+  height: 6.5rem;
+  display: flex;
+  align-items: center;
+  line-height: 1.8rem;
+}
+footer .foPhonE li img {
+  height: 3rem;
+  margin-right: 1.5rem;
+}
+footer p {
+  text-align: center;
+  line-height: 1.8rem;
+}
