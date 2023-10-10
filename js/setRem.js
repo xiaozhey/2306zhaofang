@@ -5,6 +5,7 @@ function setRem() {
     var clientWidth = document.documentElement.clientWidth || document.body.clientWidth;
     var html = document.querySelector('html');
     clientWidth = clientWidth < 375 ? 375 : clientWidth;
+    // clientWidth = clientWidth > 640 ? 640 : clientWidth;
     html.style.fontSize = (clientWidth / uiWidth) * 10 + 'px';
 }
 

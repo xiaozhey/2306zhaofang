@@ -4,8 +4,9 @@
 }
 html,
 body {
-  min-width: 37.5rem;
+  min-width: 375px;
   background-color: #F5F5F5;
+  margin: auto;
 }
 a {
   text-decoration: none;
@@ -51,6 +52,7 @@ footer {
   box-sizing: border-box;
   position: sticky;
   bottom: 0;
+  z-index: 9;
 }
 footer .foNav {
   width: 100%;
