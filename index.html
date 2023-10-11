@@ -168,10 +168,11 @@
 </body>
 
 </html>
+<script src="js/touch.min.js"></script>
 <script>
     var close_ = document.querySelector('#close');
     var ad = close_.parentNode;
-    close_.onclick = function () {
+    touch.on(close_, 'tap', function () {
         ad.style.display = 'none';
-    }
+    })
 </script>
