@@ -1,0 +1,208 @@
+/* 导航栏 */
+nav {
+    padding: 1rem 2rem;
+    font-size: 1.4rem;
+    background-color: #fff;
+}
+
+/* banner图 */
+.banner {
+    width: 100%;
+    height: 21.6rem;
+    overflow: hidden;
+
+    img {
+        width: 100%;
+    }
+}
+
+/* 标题 */
+.title {
+    display: flex;
+    // align-items: center;
+    padding-left: 1.8rem;
+    height: 7.5rem;
+    background-color: #fff;
+
+    h3 {
+        flex: 1;
+        display: flex;
+        align-items: center;
+        font-size: 1.8rem;
+    }
+
+    span {
+        width: 6.5rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        border-left: 0.1rem solid #E5E5E5;
+
+        img {
+            width: 2rem;
+        }
+    }
+}
+
+/* 租金35 */
+.rent {
+    width: 100%;
+    display: flex;
+    padding: 3rem 0;
+    box-sizing: border-box;
+    border-top: 0.1rem solid #E5E5E5;
+    border-bottom: 0.1rem solid #E5E5E5;
+
+    li {
+        flex: 1;
+        height: 3.5rem;
+        border-right: 0.1rem solid #E5E5E5;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        &:last-child {
+            border: none;
+        }
+
+        span {
+            color: #ff8a00;
+            margin-top: .5rem;
+        }
+    }
+}
+
+.houseDeta {
+    background-color: #FFFFFF;
+    padding: 0 2rem;
+    box-sizing: border-box;
+    // margin: 1.2rem 0rem;
+    border-bottom: .1rem solid #E5E5E5;
+    // border-top: .1rem solid #E5E5E5;
+
+    li {
+        height: 5rem;
+        border-bottom: .1rem solid #E5E5E5;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        &:last-child {
+            justify-content: center;
+            border: none;
+
+            a {
+                color: gray;
+            }
+        }
+
+        span {
+            flex: 1;
+        }
+    }
+}
+
+/* 经纪人房评 */
+.review {
+    padding: 0 1rem;
+    // margin: 1.2rem 0rem;
+    box-sizing: border-box;
+
+    li {
+        margin-top: 1.2rem;
+        // padding: 0 1rem;
+        box-sizing: border-box;
+        background-color: #fff;
+        border: .1rem solid #E5E5E5;
+
+        div {
+            padding: 1.7rem 1rem;
+            display: flex;
+            justify-content: space-between;
+            border-bottom: .1rem solid #E5E5E5;
+            align-items: center;
+
+            h3 {
+                font-size: 1.6rem;
+                color: #FF8100;
+            }
+
+            img {
+                height: 1.5rem;
+            }
+        }
+
+        p {
+            padding: 1.7rem 1rem;
+            line-height: 2rem;
+        }
+
+        .history {
+            padding: 1rem 1rem;
+
+            span {
+                color: red;
+            }
+        }
+
+        .map {
+            padding: .7rem;
+            display: block;
+            border: none;
+
+            div {
+                border: .1rem solid #E5E5E5;
+                display: block;
+                padding: 0;
+
+                h4 {
+                    padding: .7rem .6rem;
+                }
+
+                img {
+                    width: 100%;
+                    height: 165px;
+                }
+            }
+        }
+    }
+}
+
+/* 联系方式 */
+.relation {
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    margin-top: 1.2rem;
+
+    .zs {
+        height: 4rem;
+        display: flex;
+        flex: 1;
+
+        img {
+            width: 4rem;
+            margin-right: .6rem;
+        }
+
+        div {
+            display: flex;
+            flex-direction: column;
+            font-size: 1.4rem;
+        }
+    }
+
+    .img {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-right: 2rem;
+
+        img {
+            width: 3rem;
+        }
+    }
+}
