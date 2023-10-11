@@ -103,15 +103,18 @@ password_.onblur = function () {
 var repasswordJudge = false;
 var tishi4 = document.getElementsByClassName('tishi4')[0];
 repassword.onblur = function () {
-    if (this.value == password_.value) {
-        tishi4.style.color = 'skyblue';
-        tishi4.innerHTML = '验证成功'
-        repasswordJudge = true;
-
-    } else {
+    if (this.value != password_.value) {
         tishi4.style.color = 'red';
         tishi4.innerHTML = '两次密码输入不一致'
         repasswordJudge = false;
+    } else if (this.value == '' && password_.value == '') {
+        tishi4.style.color = 'red';
+        tishi4.innerHTML = '确认密码不能为空'
+        repasswordJudge = false;
+    } else if (this.value == password_.value) {
+        tishi4.style.color = 'skyblue';
+        tishi4.innerHTML = '验证成功'
+        repasswordJudge = true;
     }
 }
 var password = localStorage.getItem('password');
