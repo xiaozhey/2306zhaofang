@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/Head.css">
+    <link rel="stylesheet" href="css/login.css">
+    <script src="js/setRem.js"></script>
+</head>
+
+<body>
+    <!-- 头部 -->
+    <header>
+        <div class="log">
+            <img src="image/index/logo.jpg" alt="">
+        </div>
+        <div class="function">
+            <a href="javaScript:;">
+                <img src="image/index/my.jpg" alt="">
+            </a>
+            <a href="javaScript:;">
+                <img src="image/index/xiazai.jpg" alt="">
+            </a>
+        </div>
+    </header>
+    <ul>
+        <li><span>首页</span>><span>我的</span>><span>登录</span></li>
+        <li class="op">
+            <div class="a normal active">普通登录</div>
+            <div class="a yan">验证码快捷登陆</div>
+        </li>
+    </ul>
+    <ul class="tab tab1 cc">
+        <li><input type="tel" id="logintelephone" placeholder="请输入手机号码">
+            <p class="tishi tishi1">错误</p>
+        </li>
+        <li><input type="password" id="loginpassword" placeholder="请输入密码">
+            <p class="tishi tishi2">错误2</p>
+        </li>
+        </li>
+    </ul>
+    <ul class="tab tab2">
+        <li><input type="tel" id="telephone" placeholder="请输入手机号码" maxlength="11">
+            <button id="yanzm">发送验证码</button>
+            <p class="tishi tishi3">错误</p>
+        </li>
+        </li>
+        <li><input type="text" placeholder="请输入短信中的验证码" id="code">
+            <p class="tishi tishi4">错误</p>
+        </li>
+        </li>
+    </ul>
+    <div class="last"><button id="login">立即登录</button></div>
+    <div class="last1"><a href="./register.html">立即注册</a>
+        <a href="#">忘记密码</a>
+    </div>
+</body>
+
+</html>
+<script src="./js/login.js"></script>
