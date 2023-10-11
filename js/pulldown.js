@@ -42,3 +42,28 @@ for (var k = 0; k < course.length; k++) {
         window.e ? e.cancelBubble = true : e.stopPropagation();
     }
 }
+//获取对号ok
+var noOk = document.getElementsByClassName('noOk');
+for (var l = 0; l < noOk.length; l++) {
+    noOk[l].setAttribute('ind', l);
+    noOk[l].onclick = function () {
+        var ind = this.getAttribute('ind');
+        for (var i = 0; i < noOk.length; i++) {
+            noOk[i].classList.remove('ok');
+        }
+        noOk[ind].classList.add('ok');
+    }
+}
+//获取标题courTit
+var courTit = document.getElementById('courTit');
+var h3 = courTit.children;
+for (var h = 0; h < h3.length; h++) {
+    h3[h].setAttribute('ind', h);
+    h3[h].onclick = function () {
+        var ind = this.getAttribute('ind');
+        for (var i = 0; i < h3.length; i++) {
+            h3[i].classList.remove('courH');
+        }
+        h3[ind].classList.add('courH');
+    }
+}
