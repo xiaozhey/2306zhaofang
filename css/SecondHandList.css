@@ -14,6 +14,7 @@
 }
 .search p input {
   width: 85%;
+  font-size: 1.4rem;
   outline: none;
   border: none;
   border-right: 1px solid black;
@@ -91,7 +92,7 @@
 .hotInfo li div h3 {
   width: 22rem;
   font-size: 1.6rem;
-  margin-bottom: 9px;
+  margin-bottom: 0.9rem;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
