@@ -131,7 +131,7 @@ touch.on(loginButton, 'tap', function () {
         telephone.value = '';
         code.value = ''
         localStorage.setItem('login', 'true');
-        location.href = ("./my.html")
+        location.href = ("./my2.html")
     }
 });
 
