@@ -119,5 +119,6 @@ register.onclick = function () {
         for (var i = 0; i < tishi.length; i++) {
             tishi[i].style.color = '#fff'
         }
+        window.open('./login.html', '_self')
     }
 }
