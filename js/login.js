@@ -2,7 +2,7 @@ var tab = document.getElementsByClassName('tab')
 var a = document.getElementsByClassName('a');
 for (var i = 0; i < a.length; i++) {
     a[i].setAttribute('index', i);
-    a[i].onclick = function () {
+    touch.on(a[i], 'tap', function () {
         var index = this.getAttribute('index');
         for (var j = 0; j < a.length; j++) {
             a[j].className = 'a';
@@ -12,7 +12,7 @@ for (var i = 0; i < a.length; i++) {
             tab[k].className = 'tab';
             tab[index].className = 'tab cc'
         }
-    }
+    });
 }
 var loginTelephone = document.getElementById('logintelephone');
 var loginPassword = document.getElementById('loginpassword');
@@ -29,7 +29,7 @@ var num = 60;
 var timer;
 var randoms = 0;
 var yanzm = document.getElementById('yanzm');
-yanzm.onclick = function () {
+touch.on(yanzm, 'tap', function () {
     if (telephone.value == tel) {
         clearInterval(timer);
         timer = setInterval(function () {
@@ -57,7 +57,7 @@ yanzm.onclick = function () {
         tishi3.innerHTML = '手机号未注册';
         tishi3.style.color = 'red';
     }
-}
+});
 // 验证短信验证码
 var code = document.getElementById('code');
 var verificationCodeJudge = false;
@@ -125,7 +125,7 @@ telephone.onblur = function () {
         telephoneJudge = true;
     }
 }
-loginButton.onclick = function () {
+touch.on(loginButton, 'tap', function () {
     if ((loginTelephoneJudge == true && loginPasswordJudge == true) || (verificationCodeJudge == true && telephoneJudge == true)) {
         alert('登录成功');
         telephone.value = '';
@@ -133,6 +133,6 @@ loginButton.onclick = function () {
         localStorage.setItem('login', 'true');
         location.href = ("./my.html")
     }
-}
+});
 
 
