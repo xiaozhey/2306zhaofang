@@ -1,0 +1,55 @@
+/* 导航栏 */
+nav {
+  padding: 1rem 2rem;
+  font-size: 1.4rem;
+  background-color: #fff;
+  border-bottom: 0.1rem solid #E5E5E5;
+}
+/* 关注的小区 */
+.hotInfo {
+  width: 100%;
+  padding: 0rem 1.8rem;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  border-bottom: 0.1rem solid #E5E5E5;
+}
+.hotInfo li {
+  width: 100%;
+  padding: 3rem 0rem;
+  display: flex;
+  align-items: center;
+  border-bottom: 0.1rem solid #FF8100;
+}
+.hotInfo li:last-child {
+  border: none;
+}
+.hotInfo li img {
+  width: 9.5rem;
+  height: 9.5rem;
+  margin-right: 1.8rem;
+}
+.hotInfo li div {
+  flex: 1;
+  font-size: 1.4rem;
+}
+.hotInfo li div h3 {
+  width: 22rem;
+  font-size: 1.6rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.hotInfo li div p {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 0.7rem;
+}
+.hotInfo li div p > span:last-child {
+  font-weight: 700;
+  color: #FF8100;
+  margin-right: 5rem;
+}
+.hotInfo li div div {
+  margin: 0.7rem 0;
+}
