@@ -50,9 +50,6 @@ footer {
   padding: 0rem 1.8rem;
   color: #A19C97;
   box-sizing: border-box;
-  position: sticky;
-  bottom: 0;
-  z-index: 9;
 }
 footer .foNav {
   width: 100%;

@@ -1,0 +1,164 @@
+/* banner图 */
+.banner {
+  width: 100%;
+  height: 21.6rem;
+  overflow: hidden;
+}
+.banner img {
+  width: 100%;
+}
+/* 标题 */
+.title {
+  display: flex;
+  padding-left: 1.8rem;
+  height: 7.5rem;
+  background-color: #fff;
+}
+.title h3 {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  font-size: 1.8rem;
+}
+.title span {
+  width: 6.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-left: 0.1rem solid #E5E5E5;
+}
+.title span img {
+  width: 2rem;
+}
+/* 租金35 */
+.rent {
+  width: 100%;
+  display: flex;
+  padding: 3rem 0;
+  box-sizing: border-box;
+  border-top: 0.1rem solid #E5E5E5;
+  border-bottom: 0.1rem solid #E5E5E5;
+}
+.rent li {
+  flex: 1;
+  height: 3.5rem;
+  border-right: 0.1rem solid #E5E5E5;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.rent li:last-child {
+  border: none;
+}
+.rent li span {
+  color: #ff8a00;
+  margin-top: 0.5rem;
+}
+.houseDeta {
+  background-color: #FFFFFF;
+  padding: 0 2rem;
+  box-sizing: border-box;
+  border-bottom: 0.1rem solid #E5E5E5;
+}
+.houseDeta li {
+  height: 5rem;
+  border-bottom: 0.1rem solid #E5E5E5;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.houseDeta li:last-child {
+  justify-content: center;
+  border: none;
+}
+.houseDeta li:last-child a {
+  color: gray;
+}
+.houseDeta li span {
+  flex: 1;
+}
+/* 经纪人房评 */
+.review {
+  padding: 0 1rem;
+  box-sizing: border-box;
+}
+.review li {
+  margin-top: 1.2rem;
+  box-sizing: border-box;
+  background-color: #fff;
+  border: 0.1rem solid #E5E5E5;
+}
+.review li div {
+  padding: 1.7rem 1rem;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 0.1rem solid #E5E5E5;
+  align-items: center;
+}
+.review li div h3 {
+  font-size: 1.6rem;
+  color: #FF8100;
+}
+.review li div img {
+  height: 1.5rem;
+}
+.review li p {
+  padding: 1.7rem 1rem;
+  line-height: 2rem;
+}
+.review li .history {
+  padding: 1rem 1rem;
+}
+.review li .history span {
+  color: red;
+}
+.review li .map {
+  padding: 0.7rem;
+  display: block;
+  border: none;
+}
+.review li .map div {
+  border: 0.1rem solid #E5E5E5;
+  display: block;
+  padding: 0;
+}
+.review li .map div h4 {
+  padding: 0.7rem 0.6rem;
+}
+.review li .map div img {
+  width: 100%;
+  height: 165px;
+}
+/* 联系方式 */
+.relation {
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  background-color: #fff;
+  margin-top: 1.2rem;
+}
+.relation .zs {
+  height: 4rem;
+  display: flex;
+  flex: 1;
+}
+.relation .zs img {
+  width: 4rem;
+  margin-right: 0.6rem;
+}
+.relation .zs div {
+  display: flex;
+  flex-direction: column;
+  font-size: 1.4rem;
+}
+.relation .img {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-right: 2rem;
+}
+.relation .img img {
+  width: 3rem;
+}
