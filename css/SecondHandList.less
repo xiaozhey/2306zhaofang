@@ -1,0 +1,315 @@
+/* 搜索框 */
+.search {
+    padding: 1.2rem 1.5rem;
+    box-sizing: border-box;
+
+    p {
+        padding-left: 1.2rem;
+        height: 4.8rem;
+        border: .1rem solid #cccccc;
+        background-color: #fff;
+        display: flex;
+        align-items: center;
+        border-radius: .4rem;
+
+        input {
+            width: 85%;
+            outline: none;
+            border: none;
+            border-right: 1px solid black;
+        }
+
+        a {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+
+            img {
+                width: 2.1rem;
+                height: 2.3rem;
+            }
+        }
+    }
+}
+
+/* 导航栏 */
+.nav {
+    width: 100%;
+    padding: 1rem 0rem;
+    background-color: #fff;
+    border-bottom: .1rem solid #E5E5E5;
+    border-top: .1rem solid #E5E5E5;
+    display: flex;
+    justify-content: space-around;
+
+
+    li {
+        font-size: 2.1rem;
+        font-weight: 700;
+        color: #666666;
+        position: relative;
+
+        span {
+            border-top: 5px solid #ccc;
+            border-left: 5px solid transparent;
+            border-right: 5px solid transparent;
+            position: absolute;
+            top: .5rem;
+            right: -1.6rem;
+        }
+
+        /* 选中小三角 */
+        .sanjiao {
+            border-bottom: 5px solid #ff8a00;
+            border-left: 5px solid transparent;
+            border-right: 5px solid transparent;
+            border-top: 5px solid transparent;
+            top: 0;
+        }
+    }
+}
+
+/* 关注的小区 */
+.hotInfo {
+    width: 100%;
+    padding: 0rem 1.8rem;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    border-bottom: .1rem solid #E5E5E5;
+
+    li {
+        width: 100%;
+        padding: 2.5rem 0rem;
+        display: flex;
+        align-items: center;
+        border-bottom: .1rem solid #FF8100;
+        line-height: 2.3rem;
+
+        &:last-child {
+            border: none;
+        }
+
+        img {
+            width: 9.5rem;
+            height: 9.5rem;
+            margin-right: 1.8rem;
+        }
+
+        div {
+            flex: 1;
+            font-size: 1.4rem;
+
+            h3 {
+                width: 22rem;
+                font-size: 1.6rem;
+                margin-bottom: 9px;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                white-space: nowrap;
+            }
+
+            p {
+                color: #b0b0b0;
+
+                &>span:last-child {
+                    font-weight: 700;
+                    color: #FF8100;
+                }
+            }
+        }
+
+        .hotCol {
+            color: #b0b0b0;
+        }
+    }
+}
+
+/* 导航选中后tab切换类名 */
+.navActive {
+    position: fixed;
+    min-width: 375px;
+    top: 0;
+    z-index: 4;
+}
+
+/* 下拉框样式 */
+.courseA {
+    display: flex;
+
+    div {
+        flex: 1;
+        background: #f0f0f0;
+        border-right: 1px solid #cccccc;
+        text-align: center;
+
+        h3 {
+            width: 100%;
+            height: 4.6rem;
+            font-size: 2rem;
+            font-weight: 700;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        /* 选中的标题 */
+        .courH {
+            color: #ff8a00;
+            background: #fff;
+            margin-right: -1px;
+            border-right: 2px solid #fff;
+        }
+    }
+
+    ul {
+        flex: 3;
+        display: flex;
+        flex-wrap: wrap;
+
+
+        li {
+            width: 50%;
+            height: 4.6rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            a {
+                font-size: 1.4rem;
+                color: #666666;
+            }
+        }
+    }
+}
+
+.courseB {
+    padding: 0 2.5rem;
+    box-sizing: border-box;
+
+    li {
+        height: 4.9rem;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        border-bottom: 1px solid #ccc;
+
+        &:last-child {
+            border: none;
+        }
+
+        a {
+            font-size: 1.4rem;
+            color: #000;
+        }
+
+        span {
+            width: 2rem;
+            height: 2rem;
+            border: 1px solid #c5c3c3;
+            margin-right: 2rem;
+        }
+
+        /* 选中对号 */
+        .ok {
+            border: 1px solid #ff8a00;
+            background: url(../image/SecondHandList/ok.png) center center no-repeat;
+        }
+    }
+
+
+    button {
+        text-align: center;
+        background: #ff8a00;
+        color: #fff;
+        width: 100%;
+        height: 47px;
+        font-weight: bold;
+        border: none;
+        margin-bottom: 3rem;
+    }
+
+}
+
+/* 黑色罩子 */
+.hide {
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    display: none;
+}
+
+.course {
+    z-index: 3;
+    position: absolute;
+    top: 4.8rem;
+    width: 100%;
+    background-color: #fff;
+    transform: scale(0);
+    min-width: 375px;
+}
+
+.courseC {
+    padding: 0 2.5rem;
+    box-sizing: border-box;
+
+    li {
+        border-bottom: 1px solid #ccc;
+
+        &:last-child {
+            border: none;
+        }
+
+        h3 {
+            font-size: 1.8rem;
+            font-weight: 700;
+            margin: 2rem 0;
+        }
+
+        ul {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+
+            li {
+                width: 7rem;
+                height: 3rem;
+                border: 1px solid #cccccc;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin-bottom: 2rem;
+
+                &:last-child {
+                    border: 1px solid #cccccc;
+                }
+
+            }
+
+            span {
+                width: 7rem;
+                height: 3rem;
+            }
+        }
+    }
+
+    button {
+        text-align: center;
+        background-color: #fff;
+        color: #ff8a00;
+        width: 100%;
+        height: 4.7rem;
+        border: none;
+        font-size: 1.4rem;
+
+        &:last-child {
+            background-color: #ff8a00;
+            color: #fff;
+            margin-bottom: 3rem;
+        }
+    }
+}
