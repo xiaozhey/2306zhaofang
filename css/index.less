@@ -54,12 +54,16 @@
         width: 6rem;
         height: 7.9rem;
         font-size: 1.4rem;
-        color: #FFFFFF;
         text-align: center;
 
-        img {
-            width: 6rem;
+        a {
+            color: #FFFFFF;
+
+            img {
+                width: 6rem;
+            }
         }
+
     }
 }
 
@@ -95,58 +99,62 @@
         width: 100%;
         // background-color: pink;
         padding: 3rem 0rem;
-        display: flex;
-        align-items: center;
+
         border-bottom: .1rem solid #FF1F1F;
 
         &:last-child {
             border: none;
         }
 
-        img {
-            height: 8rem;
-            margin-right: 1.8rem;
-        }
+        a {
+            display: flex;
+            align-items: center;
 
-        div {
-            // background-color: orange;
-            flex: 1;
-
-            h3 {
-                width: 22rem;
-                font-size: 2.1rem;
-                overflow: hidden;
-                text-overflow: ellipsis;
-                white-space: nowrap;
-            }
-
-            p {
-                font-size: 1.2rem;
-                display: flex;
-                justify-content: space-between;
-                margin: 1.2rem 0;
-
-                &>span:last-child {
-                    font-weight: 700;
-                    color: #FF8100;
-                }
+            img {
+                height: 8rem;
+                margin-right: 1.8rem;
             }
 
             div {
-                font-size: 1.2rem;
-                display: flex;
-                justify-content: space-between;
-                color: gray;
-                margin-bottom: 1.2rem;
-            }
+                // background-color: orange;
+                flex: 1;
 
-            .hotCol {
-                display: inline-block;
-                padding: .2rem .3rem;
-                box-sizing: border-box;
-                background-color: #F4F7F9;
-                color: #8399AE;
-                margin-right: .3rem;
+                h3 {
+                    width: 22rem;
+                    font-size: 2.1rem;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                    white-space: nowrap;
+                }
+
+                p {
+                    font-size: 1.2rem;
+                    display: flex;
+                    justify-content: space-between;
+                    margin: 1.2rem 0;
+
+                    &>span:last-child {
+                        font-weight: 700;
+                        color: #FF8100;
+                    }
+                }
+
+                div {
+                    font-size: 1.2rem;
+                    display: flex;
+                    justify-content: space-between;
+                    color: gray;
+                    margin-bottom: 1.2rem;
+                }
+
+                .hotCol {
+                    display: inline-block;
+                    padding: .2rem .3rem;
+                    box-sizing: border-box;
+                    background-color: #F4F7F9;
+                    color: #8399AE;
+                    margin-right: .3rem;
+                }
             }
         }
     }

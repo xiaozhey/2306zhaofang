@@ -44,6 +44,9 @@ for (var k = 0; k < course.length; k++) {
         window.e ? e.cancelBubble = true : e.stopPropagation();
     })
 }
+touch.on(nav, 'tap', function (e) {
+    window.e ? e.cancelBubble = true : e.stopPropagation();
+})
 //获取对号ok
 var noOk = document.getElementsByClassName('noOk');
 for (var l = 0; l < noOk.length; l++) {
