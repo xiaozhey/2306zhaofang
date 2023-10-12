@@ -14,7 +14,7 @@ telephone.onblur = function () {
         telephoneJudge = false;
     } else {
         tishi1.style.color = 'skyblue';
-        tishi1.innerHTML = '验证成功√';
+        tishi1.innerHTML = '验证成功';
         telephoneJudge = true;
         verificationButton.disabled = false;
     }
@@ -66,7 +66,7 @@ verificationCode.onblur = function () {
         verificationCodeJudge = false;
     } else if (this.value == randoms) {
         tishi2.style.color = 'skyblue';
-        tishi2.innerHTML = '验证成功√';
+        tishi2.innerHTML = '验证成功';
         verificationCodeJudge = true;
     } else {
         tishi2.style.color = 'red';
@@ -89,7 +89,7 @@ password.onblur = function () {
         passwordJudge = false;
     } else {
         tishi3.style.color = 'skyblue';
-        tishi3.innerHTML = '密码验证成功√';
+        tishi3.innerHTML = '密码验证成功';
         passwordJudge = true;
     }
 }
