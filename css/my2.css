@@ -18,8 +18,8 @@ li {
     width: 100%;
     height: 4rem;
     border-bottom: 1px solid rgb(196, 195, 195);
-    display: flex;
-    align-items: center;
+    /* display: flex;
+    align-items: center; */
 }
 
 .first {
@@ -76,7 +76,7 @@ li img {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: 20px;
+    margin-top: 4rem;
 }
 
 .tuichu {
@@ -89,4 +89,11 @@ li img {
     justify-content: center;
     align-items: center;
 
+}
+
+li a {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
