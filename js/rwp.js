@@ -31,7 +31,7 @@ var verificationButton = document.getElementById('verificationButton');
 var num = 60;
 var timer;
 var randoms = 0;
-verificationButton.onclick = function () {
+touch.on(verificationButton, 'tap', function () {
     if (telephoneJudge == true && !telephone.value == '') {
         clearInterval(timer);
         timer = setInterval(function () {
@@ -59,7 +59,7 @@ verificationButton.onclick = function () {
         tishi1.innerHTML = '手机号不能为空，请重新输入';
         tishi1.style.color = 'red';
     }
-}
+})
 
 // 验证短信验证码
 var verificationCode = document.getElementById('verificationCode');
