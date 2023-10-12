@@ -1,18 +1,19 @@
 var tab = document.getElementsByClassName('tab')
-var a = document.getElementsByClassName('a');
-for (var i = 0; i < a.length; i++) {
-    a[i].setAttribute('index', i);
-    touch.on(a[i], 'tap', function () {
+var as = document.getElementsByClassName('a');
+for (var i = 0; i < as.length; i++) {
+    as[i].setAttribute('index', i);
+    as[i].onclick = function () {
         var index = this.getAttribute('index');
-        for (var j = 0; j < a.length; j++) {
-            a[j].className = 'a';
-            a[index].className = 'a active';
+        for (var j = 0; j < as.length; j++) {
+            as[j].className = 'a';
+            as[index].className = 'a active'
+
         }
         for (var k = 0; k < tab.length; k++) {
             tab[k].className = 'tab';
             tab[index].className = 'tab cc'
         }
-    });
+    };
 }
 var loginTelephone = document.getElementById('logintelephone');
 var loginPassword = document.getElementById('loginpassword');
@@ -131,7 +132,7 @@ touch.on(loginButton, 'tap', function () {
         telephone.value = '';
         code.value = ''
         localStorage.setItem('login', 'true');
-        location.href = ("./my.html")
+        location.href = ("./my2.html")
     }
 });
 
