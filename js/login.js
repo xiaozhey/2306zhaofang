@@ -70,7 +70,7 @@ code.onblur = function () {
         verificationCodeJudge = false;
     } else if (this.value == randoms) {
         tishi4.style.color = 'skyblue';
-        tishi4.innerHTML = '验证成功√';
+        tishi4.innerHTML = '验证成功';
         verificationCodeJudge = true;
     } else {
         tishi4.style.color = 'red';
