@@ -37,7 +37,7 @@ touch.on(yanzm, 'tap', function () {
             num--;
             yanzm.value = `${num}秒后重新发送`;
             yanzm.innerHTML = `${num}秒后重新发送`
-            yanzm.style.fontSize = '.8rem'
+            yanzm.style.fontSize = '.6rem'
             yanzm.disabled = true;
             if (num == 55) {
                 randoms = parseInt(Math.random() * 10000);
