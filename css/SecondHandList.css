@@ -72,24 +72,26 @@
 .hotInfo li {
   width: 100%;
   padding: 2.5rem 0rem;
-  display: flex;
-  align-items: center;
   border-bottom: 0.1rem solid #FF8100;
-  line-height: 2.3rem;
 }
 .hotInfo li:last-child {
   border: none;
 }
-.hotInfo li img {
+.hotInfo li a {
+  display: flex;
+  align-items: center;
+  line-height: 2.3rem;
+}
+.hotInfo li a img {
   width: 9.5rem;
   height: 9.5rem;
   margin-right: 1.8rem;
 }
-.hotInfo li div {
+.hotInfo li a div {
   flex: 1;
   font-size: 1.4rem;
 }
-.hotInfo li div h3 {
+.hotInfo li a div h3 {
   width: 22rem;
   font-size: 1.6rem;
   margin-bottom: 0.9rem;
@@ -97,14 +99,14 @@
   text-overflow: ellipsis;
   white-space: nowrap;
 }
-.hotInfo li div p {
+.hotInfo li a div p {
   color: #b0b0b0;
 }
-.hotInfo li div p > span:last-child {
+.hotInfo li a div p > span:last-child {
   font-weight: 700;
   color: #FF8100;
 }
-.hotInfo li .hotCol {
+.hotInfo li a .hotCol {
   color: #b0b0b0;
 }
 /* 导航选中后tab切换类名 */

@@ -46,10 +46,12 @@
   width: 6rem;
   height: 7.9rem;
   font-size: 1.4rem;
-  color: #FFFFFF;
   text-align: center;
 }
-.nav li img {
+.nav li a {
+  color: #FFFFFF;
+}
+.nav li a img {
   width: 6rem;
 }
 /* 热门房源 */
@@ -80,45 +82,47 @@
 .hotInfo li {
   width: 100%;
   padding: 3rem 0rem;
-  display: flex;
-  align-items: center;
   border-bottom: 0.1rem solid #FF1F1F;
 }
 .hotInfo li:last-child {
   border: none;
 }
-.hotInfo li img {
+.hotInfo li a {
+  display: flex;
+  align-items: center;
+}
+.hotInfo li a img {
   height: 8rem;
   margin-right: 1.8rem;
 }
-.hotInfo li div {
+.hotInfo li a div {
   flex: 1;
 }
-.hotInfo li div h3 {
+.hotInfo li a div h3 {
   width: 22rem;
   font-size: 2.1rem;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
 }
-.hotInfo li div p {
+.hotInfo li a div p {
   font-size: 1.2rem;
   display: flex;
   justify-content: space-between;
   margin: 1.2rem 0;
 }
-.hotInfo li div p > span:last-child {
+.hotInfo li a div p > span:last-child {
   font-weight: 700;
   color: #FF8100;
 }
-.hotInfo li div div {
+.hotInfo li a div div {
   font-size: 1.2rem;
   display: flex;
   justify-content: space-between;
   color: gray;
   margin-bottom: 1.2rem;
 }
-.hotInfo li div .hotCol {
+.hotInfo li a div .hotCol {
   display: inline-block;
   padding: 0.2rem 0.3rem;
   box-sizing: border-box;
